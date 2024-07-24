@@ -1,0 +1,65 @@
+import logoDiv from "./modules/logoDiv.js";
+
+const h1Suppr = document.querySelector("h1");
+h1Suppr.remove();
+
+const body = document.querySelector("body");
+const main = document.createElement("main");
+const header = document.createElement("header");
+
+header.appendChild(logoDiv());
+
+const nav = document.createElement("nav");
+const boutique = document.createElement("a");
+boutique.setAttribute("href", "#");
+boutique.innerText = "Boutique";
+nav.appendChild(boutique);
+const apropos = document.createElement("a");
+apropos.setAttribute("href", "#");
+apropos.innerText = "A propos";
+nav.appendChild(apropos);
+const blog = document.createElement("a");
+blog.setAttribute("href", "#");
+blog.innerText = "Blog";
+nav.appendChild(blog);
+const contact = document.createElement("a");
+contact.setAttribute("href", "#");
+contact.innerText = "Contact";
+nav.appendChild(contact);
+const panier = document.createElement("a");
+panier.setAttribute("href", "#");
+const panierImg = document.createElement("img");
+panierImg.setAttribute("src", "images/cart.svg");
+panierImg.classList.add("panierImg");
+panier.appendChild(panierImg);
+nav.appendChild(panier);
+const compte = document.createElement("a");
+compte.setAttribute("href", "#");
+const compteImg = document.createElement("img");
+compteImg.setAttribute("src", "images/account.svg");
+compte.appendChild(compteImg);
+nav.appendChild(compte);
+header.appendChild(nav);
+body.appendChild(header);
+
+const hero = document.createElement("div");
+hero.classList.add("hero");
+const heroH1 = document.createElement("h1");
+heroH1.innerText = "Hero Section";
+hero.appendChild(heroH1);
+const heroH2 = document.createElement("h2");
+heroH2.innerText = "Sous-titre de la section hero";
+hero.appendChild(heroH2);
+main.appendChild(hero);
+const second = document.createElement("div");
+second.classList.add("second");
+const secondDiv = document.createElement("div");
+const secondH1 = document.createElement("h1");
+secondH1.innerText = "Second Section";
+secondDiv.appendChild(secondH1);
+const secondH2 = document.createElement("h2");
+secondH2.innerText = "Sous-titre de second section";
+secondDiv.appendChild(secondH2);
+second.appendChild(secondDiv);
+main.appendChild(second);
+body.appendChild(main);

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="utf-8" >
+    <title>Formulaire d'inscription</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <form method="get" action="">
+        <div class="formulaire">
+            <div>
+                <div class="champ nom">
+                    <label for="nom">Nom :</label>
+                    <input type="text" name="nom" id="nom" placeholder="Ex : Bichon">
+                </div>
+                <div class="champ prenom">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Ex : Samuel">
+                </div>
+            </div>
+            <div>
+                <div class="champ email">
+                    <label for="email">Adresse mail :</label>
+                    <input type="email" name="email" id="email" placeholder="Ex : samuelbichon@exemple.fr">
+                </div>
+                <div class="champ tel">
+                    <label for="tel">Numéro de téléphone :</label>
+                    <input type="tel" name="tel" id="tel" placeholder="Ex : 0612345678">
+                </div>
+            </div>
+            <div>
+                <div class="champ adresse">
+                    <label for="adresse">Adresse :</label>
+                    <input type="text" name="adresse" id="adresse" placeholder="Ex : 2 rue des Jardins">
+                </div>
+                <div class="champ cpostal">
+                    <label for="cpostal">Code Postal :</label>
+                    <input type="text" name="cpostal" id="cpostal" placeholder="Ex : 64000">
+                </div>
+                <div class="champ ville">
+                    <label for="ville">Ville :</label>
+                    <input type="text" name="ville" id="ville" placeholder="Ex : Pau">
+                </div>
+            </div>
+            
+            <div class="checkbox">
+                <input type="checkbox" name="conditions" id="conditions" required><span>J'ai lu les conditions d'utilisation.</span>
+            </div>
+            <input class="bouton" type="submit" value="Inscription" disabled>
+        </div>
+    </form>
+</body>
+</html>

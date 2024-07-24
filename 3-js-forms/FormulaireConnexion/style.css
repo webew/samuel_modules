@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(104, 161, 182);
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 350px;
+    height: 200px;
+    margin-top: 300px;
+    gap: 15px;
+    border: solid 1px rgba(44, 127, 141, 0.322);
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px rgba(0, 48, 54, 0.397);
+    background-color: rgb(219, 237, 241);
+}
+
+.user, .mdp {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    color: rgb(41, 99, 109);
+}
+
+.user {
+    margin-top: 20px;
+}
+.user input {
+    width: 250px;
+}
+
+.mdp input {
+    width: 100px;  
+}
+
+.user input, .mdp input {
+    margin-top: 3px;
+    background-color: rgb(202, 224, 230);
+    border: solid 1px rgb(41, 99, 109);
+    border-radius: 5px;
+}
+
+.user input:focus, .mdp input:focus {
+    border: solid 1px
+}
+
+.error input {
+    background-color: rgb(230, 202, 202);
+    border: solid 1px rgb(109, 41, 41);
+}
+
+.bouton {
+    width: 100px;
+    margin: auto;
+    background-color: rgb(106, 203, 230);
+    border-color: rgb(41, 99, 109);
+
+    border-radius: 5px;
+    font-weight: bold;
+}

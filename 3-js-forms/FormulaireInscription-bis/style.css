@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(122, 153, 81);
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 400px;
+    height: 600px;
+    margin-top: 100px;
+    gap: 30px;
+    border: solid 1px rgba(44, 141, 68, 0.322);
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px rgba(0, 54, 9, 0.397);
+    background-color: rgb(219, 241, 223);
+    padding-top: 20px;
+}
+
+.checkbox {
+    color: rgb(41, 109, 47);
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.champ {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 68px;
+    color: rgb(41, 109, 47);
+}
+.champ input {
+    width: 250px;
+}
+
+.cpostal input, .tel input {
+    width: 100px;
+}
+
+.checkbox input {
+    width: 100px;  
+}
+
+.champ input, .checkbox input {
+    margin-top: 3px;
+    background-color: rgb(202, 230, 207);
+    border: solid 1px rgb(41, 109, 50);
+    border-radius: 5px;
+}
+
+.champ input:focus, .checkbox input:focus {
+    border: solid 1px
+}
+
+.error input {
+    background-color: rgb(230, 202, 202);
+    border: solid 1px rgb(109, 41, 41);
+}
+
+.bouton {
+    width: 100px;
+    margin: auto;
+    background-color: rgb(106, 230, 116);
+    border-color: rgb(41, 109, 47);
+    border-radius: 5px;
+    font-weight: bold;
+}

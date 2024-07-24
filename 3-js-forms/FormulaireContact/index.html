@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="utf-8" >
+    <title>Formulaire de connexion</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <form method="get" action="">
+        <div class="formulaire">
+            <div class="objet">
+                <label for="identifiant">Objet du contact :</label>
+                <input type="text" name="objet" id="objet" placeholder="Pourquoi nous écrivez-vous ?">
+            </div>
+            <div class="email">
+                <label for="identifiant">Votre adresse mail :</label>
+                <input type="email" name="email" id="email" placeholder="Ex : nomprénom@test.fr">
+            </div>
+            <div class="message">
+                <label for="message">Votre message :</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+            <input class="bouton" type="submit" value="Envoyer">
+        </div>
+    </form>
+</body>
+</html>
